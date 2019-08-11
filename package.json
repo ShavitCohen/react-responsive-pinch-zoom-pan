@@ -45,8 +45,8 @@
     "style-loader": "0.23.0",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
-    "webpack-cli": "^3.2.1",
-    "webpack-dev-server": "3.1.14"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
   },
   "author": "Brad Stiff",
   "homepage": "https://github.com/bradstiff/react-responsive-pinch-zoom-pan",
@@ -59,7 +59,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.7.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "reselect": "^4.0.0",
-    "warning": "^4.0.2"
+    "warning": "^4.0.2",
+    "yargs": "^13.3.0"
   },
   "jest": {
     "testMatch": [
