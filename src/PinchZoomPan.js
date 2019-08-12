@@ -112,7 +112,7 @@ export default class PinchZoomPan extends React.Component {
                 //and are at the edge in that directino
                 const overflow = imageOverflow(this.state);
                 const hasOverflowX = (requestedPan.left && overflow.left > 0) || (requestedPan.right && overflow.right > 0);
-                const hasOverflowY = (requestedPan.up && overflow.top > 0) ||  (requestedPan.down && overflow.bottom > 0);
+                const hasOverflowY = (requestedPan.up && overflow.top > 0) || (requestedPan.down && overflow.bottom > 0);
 
                 if (!hasOverflowX && !hasOverflowY) {
                     //no overflow in both directions
@@ -520,7 +520,7 @@ export default class PinchZoomPan extends React.Component {
                     onZoomInClick={this.handleZoomInClick}
                 />}
                 {debug && <DebugView {...this.state} overflow={imageOverflow(this.state)} />}
-                <div style={{ ...imageStyle(this.state), width: '300px', height: '500px' }}>
+                <div style={{ ...imageStyle(this.state), width: this.props.frameWidth, height: this.props.frameHeight }}>
                     {React.cloneElement(childElement, {
                         onTouchStart: this.handleTouchStart,
                         onTouchEnd: this.handleTouchEnd,
@@ -632,5 +632,7 @@ PinchZoomPan.propTypes = {
     doubleTapBehavior: PropTypes.oneOf(['reset', 'zoom']),
     initialTop: PropTypes.number,
     initialLeft: PropTypes.number,
-    rotation: PropTypes.number
+    rotation: PropTypes.number,
+    frameWidth: PropTypes.number,
+    frameHeight: PropTypes.number
 };
