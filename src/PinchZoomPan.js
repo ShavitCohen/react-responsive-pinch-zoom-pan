@@ -779,7 +779,7 @@ PinchZoomPan.propTypes = {
   frameWidth: PropTypes.number,
   frameHeight: PropTypes.number,
   onChange: PropTypes.func,
-  top: PropTypes.top,
-  left: PropTypes.left,
-  scale: PropTypes.scale,
+  top: PropTypes.number,
+  left: PropTypes.number,
+  scale: PropTypes.number,
 };
