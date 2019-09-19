@@ -5,7 +5,7 @@ import warning from 'warning';
 
 import ZoomButtons from './ZoomButtons';
 import DebugView from './StateDebugView';
-import 'css-supports';
+import './css-supports';
 
 import {
   snapToTarget,
