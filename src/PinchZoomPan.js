@@ -763,7 +763,7 @@ PinchZoomPan.defaultProps = {
   onChange: () => ({}),
   top: 0,
   left: 0,
-  scale: 0.5,
+  scale: 1,
 };
 
 PinchZoomPan.propTypes = {
